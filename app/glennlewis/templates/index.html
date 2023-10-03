@@ -1,0 +1,197 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<link href="css/styles.css" rel="stylesheet" />
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Glenn Lewis</span>
+        <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{% static 'assets/img/profile.jpg' %}" alt="..." /></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+        </ul>
+    </div>
+</nav>
+<!-- Page Content-->
+<div class="container-fluid p-0">
+    <!-- About-->
+    <section class="resume-section" id="about">
+        <div class="resume-section-content">
+            <h1 class="mb-0">
+                Glenn
+                <span class="text-primary">Lewis</span>
+            </h1>
+            <div class="subheading mb-5">
+                AUSTIN, TX 78753 · (512) 216-7591 · 
+                <a href="mailto:glelewis90@gmail.com">glelewis90@gmail.com</a>
+            </div>
+            <p class="lead mb-5">DevOps Engineer with ten years of technical experience in Linux systems administration, network management, and cloud architecture. Holds a certificate in Cybersecurity from the University of Texas’s Bootcamp. Skilled in automation (SALT, Ansible), scripting in Python and Bash, and corporate compliance. Has implemented ground-up infrastructure monitoring solutions on the enterprise level and has launched corporate event management and incident response programs. Current goals are focused on using past experience in system administration and DevOps to build agile and compliant architecture. Strengths in project management and planning, as well as expertise in Linux administration, make me an excellent addition to any technical team.</p>
+            <div class="social-icons">
+                <a class="social-icon" href="https://www.linkedin.com/in/glenn-lewis-9363b458/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a class="social-icon" href="https://github.com/urfriendglenn" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+    <hr class="m-0" />
+    <!-- Experience-->
+    <section class="resume-section" id="experience">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Experience</h2>
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">DevOps Engineer II</h3>
+                    <div class="subheading mb-3">Vectra AI</div>
+                    <p>Responsibilities included deploying and maintaining a monitoring system, Zabbix, for the internal corporate infrastructure, which comprises approximately 75% of Vectra’s entire infrastructure. Responsibilities also included maintaining system versions, managing service upgrades, and designing and deploying systems to VMware and AWS via Salt and Ansible.</p>
+                </div>
+                <div class="flex-shrink-0"><span class="text-primary">June 2021 - Present</span></div>
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Procore Technologies</h3>
+                    <div class="subheading mb-3">Intelitec Solutions</div>
+                    <p>As a Senior Information Systems Engineer, my responsibilities included designing and implementing monitoring for Procore’s corporate internal infrastructure. Responsibilities also included creating the initial runbooks and standard operating procedures for an integrated operations center.</p>
+                </div>
+                <div class="flex-shrink-0"><span class="text-primary">August 2019 - June 2021</span></div>
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">NOC Analyst II</h3>
+                    <div class="subheading mb-3">Q2ebanking</div>
+                    <p>At Q2ebanking, responsibilities included system support activities, such as network and server monitoring, troubleshooting, escalation, and resolution. Responsibilities also included customer outreach, system upgrades, and initial security response.</p>
+                </div>
+                <div class="flex-shrink-0"><span class="text-primary">January 2019 - August 2019</span></div>
+            </div>
+        </div>
+    </section>
+    <hr class="m-0" />
+    <!-- Education-->
+    <section class="resume-section" id="education">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Education</h2>
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">University of Texas</h3>
+                    <div class="subheading mb-3">Cybersecurity Bootcamp Certificate</div>
+                </div>
+                <div class="flex-shrink-0"><span class="text-primary">August 2006 - May 2010</span></div>
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-between">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Morton Ranch High School</h3>
+                    <div class="subheading mb-3">High School Diploma</div>
+                </div>
+                <div class="flex-shrink-0"><span class="text-primary">August 2002 - May 2006</span></div>
+            </div>
+        </div>
+    </section>
+    <hr class="m-0" />
+    <!-- Skills-->
+    <section class="resume-section" id="skills">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Skills</h2>
+            <div class="subheading mb-3">Programming Languages</div>
+            <ul class="list-inline dev-icons">
+                <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+                <li class="list-inline-item"><i class="fab fa-python"></i></li>
+            </ul>
+            <div class="subheading mb-3">Backend</div>
+            <ul class="fa-ul mb-0">
+                <li>
+                    <span class="fa-li"><i class="fas fa-arrow-circle-right"></i></span>
+                    Docker
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-arrow-circle-right"></i></span>
+                    Kubernetes
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-arrow-circle-right"></i></span>
+                    Bash
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-arrow-circle-right"></i></span>
+                    Mongodb, MySQL
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-arrow-circle-right"></i></span>
+                    Salt
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-arrow-circle-right"></i></span>
+                    Ansible
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-arrow-circle-right"></i></span>
+                    Django
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-arrow-circle-right"></i></span>
+                    Git
+                </li>
+                <div style="padding-bottom: 20px;"></div>
+            </ul>
+            <div class="subheading mb-3">Hosting Infrastructure</div>
+            <ul class="fa-ul mb-0">
+                <li>
+                    <span class="fa-li"><i class="fas fa-plus"></i></span>
+                    AWS
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-plus"></i></span>
+                    VMWare
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-plus"></i></span>
+                    Proxmox
+                </li>
+            </ul>
+            <div style="padding-bottom: 20px;"></div>
+            <div class="subheading mb-3">Workflow</div>
+            <ul class="fa-ul mb-0">
+                <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    Incident Management
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    Agile
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    CI/CD
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    Project Management
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    GRC Compliance
+                </li>
+            </ul>
+        </div>
+    </section>
+    <hr class="m-0" />
+    <!-- Interests-->
+    <section class="resume-section" id="interests">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Interests</h2>
+            <p>Apart from being a DevOps Engineer, I enjoy playing guitar, reading, and spending time with family and friends. I also enjoy playing board games as well as video games. I am also an avid writer, and plan on launching a blog which I will make available soon.</p>
+        </div>
+    </section>
+    <hr class="m-0" />
+    
+</div>
+<!-- Core theme JS-->
+<script src="{% static 'js/script.js' %}"></script>
+{% endblock %}
