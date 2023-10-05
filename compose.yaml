@@ -19,7 +19,7 @@ services:
     environment:
       - POSTGRES_USER=service
       - POSTGRES_PASSWORD=l9500694
-      - POSTGRES_DB=glennlewis
+      - POSTGRES_DB=glennlewis_dev
 
 volumes:
   postgres_data:
