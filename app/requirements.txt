@@ -1,3 +1,4 @@
 Django
 environs
 psycopg2-binary
+gunicorn
